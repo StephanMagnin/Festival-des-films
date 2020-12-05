@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Voici le site du festival des films en plein air"
+    />
+    <meta name="keywords" content="festival, cinema, paris," />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gotu&family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Festival des films de plein air</title>
+  </head>
+  <body>
+    <!--HEADER-->
+    <header>
+      <nav class="menu">
+          <div class="logo nav-left">
+              <a href="#"><img src="./Images/Logo.png" alt="logo"></a>
+          </div>
+          <div class="nav-right">
+              <ol>
+                  <li><a href="Accueil.html">Accueil</a></li>
+                  <li><a href="Films.html">Films</a></li>
+                  <li><a href="Reservation.html">Réservations</a></li>
+                  <li><a href="Actualités.html">Actualités</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+              </ol>
+          </div>
+      </nav>
+  </header>
+    <!--PREMIERE SECTION-->
+    <section>
+      <img class="cover"src="./Images/Cover-contact.jpg"alt="affiche-présentation"/>
+      <h1>Contact</h1>
+      <!--FORMULAIRE-->
+      <div class="container">
+        <div class="text">
+          <form method="post">
+            <label>Nom</label
+            ><input type="text" placeholder="Votre nom" name="pseudo" />
+            <label>Prénom</label
+            ><input type="text" placeholder="Votre prénom" name="pseudo" />
+            <label>Adresse email</label
+            ><input type="text" placeholder="Votre email" name="pseudo" />
+            <label>Objet</label
+            ><input type="text" placeholder="Sujet" name="pseudo" />
+            <label for="ameliorer">Message</label>
+            <textarea
+              name="ameliorer"
+              id="ameliorer"
+              placeholder="Votre message"
+              rows="10"
+              cols="50"
+            ></textarea>
+          </form><br>
+          <input id="valider" type="submit" value="Valider" />
+        </div>
+      </div>
+    </section>
+    <footer>
+      <ol class="footer__left">
+          <li><a href="#">Mentions légales</a></li>
+          <li><a href="#">Politique de confidentialité</a></li>
+          <li><a href="#">Politique de cookie</a></li>
+      </ol>
+      <ol class="footer__right">
+          <li><a href="#"><img src="./Images/facebook.png" alt="facebook"></a></li>
+          <li><a href="#"><img src="./Images/instagram-sketched.png" alt="instagram"></a></li>
+          <li><a href="#"><img src="./Images/twitter.png" alt="twitter"></a></li>
+      </ol>
+  </footer>
+  </body>
+</html>

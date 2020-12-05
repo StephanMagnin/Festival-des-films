@@ -1,0 +1,319 @@
+/*********STYLE GLOBAL*******/
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-image: url(./Images/Background.png);
+}
+
+h1{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Gotu', sans-serif;
+}
+
+h2{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Gotu', sans-serif;
+}
+
+h3{
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Gotu', sans-serif;
+}
+
+figcaption{
+    margin: 20px;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+select{
+    width: 50%;
+    padding: 0.8em;
+    border : none; 
+    border-radius: 5px;
+    font-size: 0.8em;
+    outline : none;
+    width: 50%;
+    height: 5%;
+}
+
+hr{
+    width: 70%;
+}
+
+
+figure img{
+    display: block;
+    margin: auto;
+}
+/*********HEADER*******/
+header{
+    width: 100%;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.menu ol{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.menu a{
+    text-decoration: none;
+    margin: 0 10px 0 10px;
+    color: #ffffff;
+    font-family: 'Gotu', sans-serif;
+}
+
+/*********FILMS*******/
+.cover{
+    width: 100%;
+}
+
+.films{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tous-les-films{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.button-2 a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+/*********ACTU*******/
+#actu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#actu figure img{
+    box-shadow: 
+        -8px -4px 8px 0px #fff,
+        8px 4px 12px 0px #d1d9e6;
+    border-radius: 5px;
+}
+
+/*********CONTACT*******/
+.container {
+    width: 50%;
+    margin: 10% 38% 10% 38%;
+}
+
+label {
+    display: block;
+    width: 100%;
+    padding-bottom: 10px;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+input{
+    padding: 0.8em;
+    border : none; 
+    border-radius: 5px;
+    font-size: 0.8em;
+    outline : none;
+    width: 50%;
+    height: 5%;
+}
+
+/*********FOOTER*******/
+footer{
+    margin-top: 3em;
+    display: flex;
+    flex-direction: row;
+    background-color: #000000;
+    font-family: 'Gotu', sans-serif;
+}
+
+.footer__left{
+    display : flex;
+    flex : 3;
+    justify-content : flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+.footer__left li{
+    margin : 0 1em;
+}
+
+.footer__left li a{
+    display: block;
+    margin: auto;
+    color : #ffffff;
+    text-decoration: none;
+}
+
+.footer__right{
+    display : flex;
+    flex : 1;
+    justify-content: flex-end;
+    padding-right: 1em;
+    align-items: center;
+}
+
+.footer__right li{
+    margin : 0 1em;
+}
+
+/*********MEDIA QUERIES*******/
+@media screen and (max-width: 320px){
+    .cover{
+        width: 100%;
+    }
+    h2{
+        display: none;
+    }
+    .films{
+        display: block;
+        margin: auto;
+    }
+    .footer{
+        width: 100%;
+    }
+    .footer__left{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footer__right{
+        display: none;
+    }
+    input{
+        width: 100%;
+    }
+    select{
+        width: 100%;
+    }
+    textarea{
+        width: 100%;
+    }
+    #actu{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    #actu img{
+        width: 60vh;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .cover{
+        width: 70vh;
+    }
+    h2{
+        display: none;
+    }
+    .films{
+        display: block;
+    }
+    .footer{
+        width: 100%;
+    }
+    .footer__left{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footer__right{
+        display: none;
+    }
+    input{
+        width: 100%;
+    }
+    select{
+        width: 100%;
+    }
+    textarea{
+        width: 100%;
+    }
+    #actu{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    #actu img{
+        width: 60vh;
+    }
+}
+
+@media screen and (max-width: 425px){
+    h2{
+        display: none;
+    }
+    .films{
+        display: block;
+    }
+    .footer{
+        width: 100%;
+    }
+    .footer__left{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footer__right{
+        display: none;
+    }
+    input{
+        width: 100%;
+    }
+    select{
+        width: 100%;
+    }
+    textarea{
+        width: 100%;
+    }
+    #actu{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    
+}
+
+/*********LA PLUSPART DES TABLETTES*******/
+
+@media screen and (max-width: 768px) {
+    .films{
+        flex-direction: column;
+    }
+    .footer__left{
+        justify-content: space-around;
+    }
+    .footer__right{
+        display: none;
+    }
+}
